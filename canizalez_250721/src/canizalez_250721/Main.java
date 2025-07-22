@@ -15,12 +15,13 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    System.out.println("50 grados centigrados a farhrenteit " + celsius_a_fahrenteit()+ "f"); 
+    System.out.println("50 grados centigrados a farhrenteit " + celsius_a_fahrenheit()+ "f"); 
    System.out.println("50 grados centigrados a farhrenteit " + celsius_a_kelvin()+ "k"); 
    System.out.println ("50 grados centigrados a farhrenteit " + celsius_a_rankie()+ "r"); 
-   System.out.println("50 grados centigrados a farhenteit ");
+   System.out.println("30 grados centigrados a farhenteit " );
     }
-    public static double celsius_a_fahrenteit(){
+    
+    public static double celsius_a_fahrenheit(){
         double grados_centigrados = 50.0;
         return ((grados_centigrados * 9) / 5)+32;
     
@@ -34,12 +35,12 @@ public class Main {
         double grados_centigrados = 50.0;
         return ((grados_centigrados * 9)) / 5 +491.67;
     }
-    public static double fahrenteit_a_celsius(){
-        double grados_fahrenteit= 30.0;
+    public static double fahrenheit_a_celsius(){
+        double grados_fahrenheit= 30.0;
         return (( grados_fahrenteit - 32)) *5 / 9;
     }
-    public static double fahrenteit_a_kelvin(){
-        double grados_fahrenteit = 30.0;
-        return ((grados_fahrenteit - 32 ) *5 / 9) + 273.15;
+    public static double fahrenheit_a_kelvin(){
+        double grados_fahrenheit = 30.0;
+        return ((grados_fahrenheit - 32 ) *5 / 9) + 273.15;
     }
 }
